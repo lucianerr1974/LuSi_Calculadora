@@ -1,0 +1,11 @@
+name: pipeline
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: copiar repositorio
+        uses: actions/checkout@v7
+        
